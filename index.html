@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Школа робототехники для детей</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Header / Навигация -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">РобоКлуб</div>
+            <nav class="nav">
+                <a href="#programs">Программы</a>
+                <a href="#prices">Цены</a>
+                <a href="#contact" class="phone-link">+7 (777) 123-45-67</a>
+            </nav>
+            <!-- Бургер-меню для мобилок -->
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 2. Hero Section / Главный экран -->
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>Растим инженеров с 6 лет</h1>
+                <p>Современная школа робототехники и программирования для вашего ребенка.</p>
+                <a href="#contact" class="cta-button">Записаться на пробный урок</a>
+            </div>
+        </section>
+
+        <!-- 3. Grid Section / Сетка направлений -->
+        <section id="programs" class="grid-section">
+            <div class="container">
+                <h2>Наши направления</h2>
+                <div class="cards-grid">
+                    <article class="card">
+                        <h3>Lego Моделирование</h3>
+                        <p>Для детей от 6 до 8 лет. Первые шаги в конструировании и механике.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Arduino Микроконтроллеры</h3>
+                        <p>Для детей от 9 до 12 лет. Сборка и пайка первых электронных схем.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Python программирование</h3>
+                        <p>Для подростков от 13 лет. Создание логики, игр и работа с железом.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция Цен -->
+        <section id="prices" class="grid-section prices-section">
+            <div class="container">
+                <h2>Стоимость обучения</h2>
+                <div class="cards-grid">
+                    <article class="card">
+                        <h3>Базовый</h3>
+                        <p><b>25 000 ₸ / месяц</b></p>
+                        <p>8 занятий в месяц по 1.5 часа. Группы до 8 человек.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Интенсив</h3>
+                        <p><b>40 000 ₸ / месяц</b></p>
+                        <p>12 занятий в месяц + доступ к закрытой платформе робототехники.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Индивидуальный</h3>
+                        <p><b>60 000 ₸ / месяц</b></p>
+                        <p>Персональный график и углубленное изучение с преподавателем.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Feedback Form / Форма обратной связи -->
+        <section id="contact" class="feedback-section">
+            <div class="container">
+                <h2>Записаться на занятие</h2>
+                <form class="feedback-form">
+                    <input type="text" placeholder="Имя заявителя" required>
+                    <input type="tel" placeholder="Телефон (+7...)" required>
+                    <input type="number" placeholder="Возраст ребенка" min="5" max="17" required>
+                    <select required>
+                        <option value="">Выберите курс</option>
+                        <option value="lego">Lego Моделирование</option>
+                        <option value="arduino">Arduino</option>
+                        <option value="python">Python</option>
+                    </select>
+                    <button type="submit" class="cta-button">Отправить заявку</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- 5. Footer / Подвал -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>г. Алматы, ул. учебная 10</p>
+            <p>&copy; 2026 Школа робототехники. Все права защищены.</p>
+            <!-- Кнопка переключения темы -->
+            <button class="theme-switch" onclick="toggleTheme()" style="background:none; border:none; cursor:pointer; font-size:1.2rem; color:white;">🌙 / ☀️</button>
+        </div>
+    </footer>
+
+    <!-- Скрипт для переключения темы -->
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-theme');
+        }
+    </script>
+
+</body>
+</html>
